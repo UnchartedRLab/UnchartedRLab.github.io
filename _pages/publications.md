@@ -6,7 +6,7 @@ author_profile: true
 <br>
 
 # Conference Papers
-===
+<br>
 
 ## 2026
 
@@ -331,8 +331,9 @@ Jun Xu, Yongxin Zhu, **Lei Jiang**, Junjie Ni and Kai Zheng.
 
 
 -------
+<br>
 # Journal Articles
-===
+<br>
 
 ## 2025
 

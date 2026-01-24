@@ -1,80 +1,92 @@
 ---
-title: "Research Summary"
+title: "Carbon-Aware LLM Research"
 permalink: /research/
 author_profile: true
 ---
 <br>
 
-## Overview
-My research develops efficient, secure, and sustainable computing systems at the intersection of **quantum computing**, **privacy-preserving machine learning**, and **energy-aware accelerator architecture**. Work spans algorithms, hardware–software co-design, and system-level implementation with an emphasis on real-world deployability and measurable resource savings. (Complete publication and funding records available in my CV.) :contentReference[oaicite:0]{index=0}
+# Overview
+
+Large Language Models (LLMs) are transforming AI, but their **energy use and carbon emissions** are substantial and growing. My research in this area develops **accurate carbon measurement, prediction, and optimization tools** that span model training, inference, and deployment — from cloud GPUs to edge processors. Rather than relying on coarse estimates, these works provide **system-aware, phase-aware, and hardware-calibrated frameworks** that enable practitioners and researchers to understand and reduce the environmental footprint of LLMs.
+
+Key contributions include:
+- End-to-end carbon modeling that integrates hardware utilization and embodied carbon.  
+- Learned predictors that estimate inference carbon with high fidelity across configurations.  
+- Estimators for edge LLM deployments that account for peripherals and embodied costs.
 
 ---
 
-## Core Themes
+## LLMCarbon (ICLR 2024) — End-to-end carbon modeling
 
-### 1. Quantum computing — algorithms, security, and hardware-aware design  
-- Design and evaluation of variational quantum algorithms, initialization strategies, and graph-neural approaches for QAOA and VQE.  
-- Security for near-term quantum systems: backdoor-style attacks, watermarking, and defenses for quantum neural networks and variational circuits.  
-- Co-design that connects quantum algorithmic needs with realistic NISQ hardware constraints.
+**Goal:** Provide an accurate, reusable framework to estimate **total carbon emissions** of LLMs before training begins.
 
-### 2. Privacy-preserving and encrypted machine learning  
-- Practical methods for training and inference on encrypted data (FHE, TFHE, HE-friendly networks).  
-- Accelerator designs and electro-optical architectures that reduce latency and energy for privacy-preserving workloads.  
-- System-level approaches for scalable private transformer inference and transformer compression under encryption.
+**Approach:**  
+- Parametric models linking LLM design (model size, architecture, MoE vs dense), execution (batch size, GPU utilization), and embodied hardware cost.  
+- Combines operational energy measurements with amortized manufacturing carbon.
 
-### 3. Sustainable machine learning and carbon-aware systems  
-- End-to-end carbon footprint modeling for LLMs and edge ML deployments.  
-- Energy-efficient accelerator architectures (photonic, ReRAM, SFQ, and hybrid photonic-CMOS proposals).  
-- Methods to measure, predict, and optimize ML energy use across software and hardware stacks.
+**Impact:**  
+- Predicts pre-training carbon with improved accuracy compared to prior tools.  
+- Helps designers explore **carbon–performance tradeoffs** early in model development.
 
-### 4. Memory, non-volatile technologies, and accelerators  
-- Architectures and techniques for ReRAM/PCM/STT-MRAM systems, including lifetime improvement, write disturbance mitigation, and processing-in-memory designs.  
-- Low-power and high-throughput accelerator microarchitectures for domain-specific workloads (genomics basecalling, CNNs, sorting).
+**Artifact:**  
+Code and datasets available at the **LLMCarbon** GitHub repository.
 
 ---
 
-## Representative Projects (selected by topic)
+## LLMCO₂ (2024–2025) — Learned inference carbon prediction
 
-- **Quantum security & watermarking:** backdoor-style watermarking for variational quantum circuits; attacks exploiting approximate synthesis; watermark removal and detection techniques. :contentReference[oaicite:1]{index=1}  
-- **CipherPrune / Private Transformers:** algorithmic pruning and system support for efficient encrypted transformer inference. :contentReference[oaicite:2]{index=2}  
-- **OFHE / Electro-Optical FHE accelerators:** co-designed electro-optical hardware to accelerate discretized TFHE and reduce FHE cost. :contentReference[oaicite:3]{index=3}  
-- **LLMCarbon & CO2-Meter:** tools and models to estimate and reduce LLM carbon footprints across device and datacenter scales. :contentReference[oaicite:4]{index=4}  
-- **MATCHA & CryptoGRU:** accelerators and algorithm/architecture co-design for homomorphic encryption and low-latency private NLP. :contentReference[oaicite:5]{index=5}
+**Goal:** Predict the **carbon cost of LLM inference** across diverse hardware and request patterns.
 
----
+**Approach:**  
+- Train a machine learning model (graph-based) to capture interactions between request characteristics (prompt length, batch size), model features (quantization, sparsity), and hardware performance patterns.  
+- Evaluate on measured inference traces spanning multiple GPU types and workloads.
 
-## Methods & Approach
-- **Hardware–software co-design:** iterate across algorithm, compiler, and hardware design to expose and optimize bottlenecks.  
-- **Cross-layer measurement:** build empirical pipelines that quantify energy, latency, and security trade-offs (from device-level metrics to application-level outcomes).  
-- **Prototype and evaluate:** implement accelerators and systems on realistic platforms (FPGAs, photonic testbeds, simulators) and validate against baselines.  
-- **Security-centric analysis:** apply threat modeling and adversarial evaluation to both classical ML and quantum systems.
+**Impact:**  
+- Surpasses traditional formula-based estimators in prediction accuracy.  
+- Enables **carbon-aware scheduling** for cloud and service deployments.
 
----
-
-## Impact & Evidence
-- Extensive peer-reviewed output across top venues in architecture, ML, security, and quantum computing; multiple best-paper awards and numerous conference nominations. :contentReference[oaicite:6]{index=6}  
-- Sustained research funding from major sources (NSF PI / Co-PI awards supporting quantum cyberinfrastructure, photonic accelerators, and applied ML systems). :contentReference[oaicite:7]{index=7}  
-- Graduated students placed into tenure-track positions and industry technical leadership roles.
+**Artifact:**  
+Published as a dataset and predictor model in support of inference carbon estimation.
 
 ---
 
-## Collaboration Opportunities
-I welcome collaborations in:
-- Experimental quantum systems and NISQ-era security evaluations.  
-- Efficient FHE and encrypted-model acceleration (hardware and compiler partnerships).  
-- Carbon-aware ML tooling and benchmark datasets.  
-If your group or company has complementary expertise (photonic devices, secure hardware, or large-scale ML systems), contact me to discuss joint proposals.
+## CO2-Meter (AAAI 2026) — Carbon estimation for edge LLMs
+
+**Goal:** Extend carbon estimation to **edge LLM inference**, where peripherals and embodied costs are significant.
+
+**Approach:**  
+- Modular estimator separating SoC operational energy, peripherals, and embodied amortization.  
+- Models distinct execution phases (prefill, decode) and platform-specific overheads (NPU, GPU, quantized CPU).  
+- Validated on a curated dataset of edge inference traces.
+
+**Impact:**  
+- Demonstrates that **peripherals and embodied costs** materially influence carbon rankings.  
+- Provides actionable estimates for edge deployment decisions (e.g., local quantized model vs cloud offload).
+
+**Artifact:**  
+Public implementation and data preprocessing scripts released with the paper.
 
 ---
 
-## For Students & Visitors
-Opportunities for graduate and undergraduate students focus on hands-on system design, measurement, and reproducible evaluation. Topics include VQAs, encrypted ML accelerators, photonic/ReRAM/SFQ hardware, and sustainable ML tooling. (See openings and application details on the group page.) :contentReference[oaicite:8]{index=8}
+## Common Methods Across Works
+
+- **Hardware-aware calibration:** Model carbon cost using real utilization and trace data from GPUs and edge SoCs.  
+- **Phase awareness:** Separate modeling for training, inference prefill, and decode phases to capture utilization dynamics.  
+- **End-to-end accounting:** Combine operational and embodied carbon to support realistic lifecycle comparisons.  
+- **Reproducibility:** Publicly available code and datasets for estimation and evaluation.
 
 ---
 
-## Selected Funding & Awards (high-level)
-- Multiple NSF awards as PI/Co-PI in quantum cyberinfrastructure, photonic ML accelerators, and automated co-design programs. :contentReference[oaicite:9]{index=9}  
-- Best Paper awards and multiple best-paper nominations across DAC, ISLPED, and other top venues. :contentReference[oaicite:10]{index=10}
+## Practical Insights
+
+- **Inference matters:** In many deployment scenarios, inference carbon rivals or exceeds training emissions.  
+- **Phase and hardware context are critical:** Simple FLOPS-based formulas are insufficient for consistent prediction across configurations.  
+- **Embodied carbon influences decisions:** Particularly on edge devices and in long-running deployments, amortized manufacturing impact changes optimal choices.
 
 ---
 
+## Links & Artifacts
+
+- **LLMCarbon (ICLR 2024):** Model repository and documentation.  
+- **LLMCO₂:** Predictor models and dataset for inference carbon.  
+- **CO2-Meter (AAAI 2026):** Edge estimator code and dataset.
