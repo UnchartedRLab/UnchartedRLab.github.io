@@ -1,7 +1,8 @@
-If you want to send a pull request to our project and github editor is not enough, then you can:
+Contributions are welcome! 
 
-1. Fork or copy this repository
+Please add issues and make pull requests. There are no stupid questions. All ideas are welcome. This is a volunteer project. Be excellent to each other.
 
-2. clone on your local environment and run your git-wiki installation following [this guide](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
 
-3. do your changes, push on your fork and create a Pull Request for us
+Fork from master and go from there. Remember that this repository is intended to remain a generic, ready-to-fork template that demonstrates the features of academicpages.
+
