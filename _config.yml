@@ -173,7 +173,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: compress
+      layout: single
       author_profile: true
       read_time: true
       comments: true
@@ -182,7 +182,7 @@ defaults:
   # _pages
   - scope:
       path: ""
-      type: pages
+      type: single
     values:
       layout: compress
       author_profile: true
@@ -191,7 +191,7 @@ defaults:
       path: ""
       type: teaching
     values:
-      layout: compress
+      layout: single
       author_profile: true
       share: true
       comments: true
@@ -200,7 +200,7 @@ defaults:
       path: ""
       type: publications
     values:
-      layout: compress
+      layout: single
       author_profile: true
       share: true
       comments: true
@@ -209,7 +209,7 @@ defaults:
       path: ""
       type: portfolio
     values:
-      layout: compress
+      layout: single
       author_profile: true
       share: true
       comment: true
@@ -232,7 +232,7 @@ defaults:
       path: ""
       type: research
     values:
-      layout: compress
+      layout: single
       author_profile: true
       share: false
 
