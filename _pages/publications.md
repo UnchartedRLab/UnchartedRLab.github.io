@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Publications ([Google Scholar](https://scholar.google.com/citations?user=-1sXorAAAAAJ), [DBLP](https://dblp.org/pid/96/1994-1.html))"
 permalink: /publications/
 author_profile: true
 ---
