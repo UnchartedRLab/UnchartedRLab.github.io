@@ -1,6 +1,6 @@
 ---
 title: "Professional Activities and Service"
-permalink: /service/
+permalink: /activities/
 author_profile: true
 ---
 <br>
