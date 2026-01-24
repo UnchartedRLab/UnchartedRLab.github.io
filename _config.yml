@@ -17,7 +17,6 @@ author:
   location         : "Bloomington, Indiana, USA"
   employer         : "Indiana University"
   uri              : # URL
-  email            : "email.png" 
 
   # Academic websites
   academia         : # URL
@@ -54,9 +53,9 @@ comments:
   facebook:
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    colorscheme          : "light"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
+  allowedFields          : ['name', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
@@ -85,7 +84,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -174,12 +173,10 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  activities:
     output: true
     permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
+
 
 
 # These settings control how pages and collections are included in the site
@@ -223,20 +220,13 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: portfolio
+      type: activities
     values:
       layout: single
       author_profile: true
       share: true
       comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+
 
 
 # Sass/SCSS
