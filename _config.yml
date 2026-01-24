@@ -1,6 +1,6 @@
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "air" 
+site_theme               : "mint" 
 title                    : "Uncharted Lab"
 title_separator          : "-"
 name                     : &name "Lei Jiang"
@@ -81,7 +81,6 @@ author:
   bio              : "Associate Professor at Indiana University"
   location         : "Bloomington, Indiana, USA"
   employer         : "Indiana University"
-
   # Academic websites
   arxiv            : "http://arxiv.org/a/jiang_l_4"
   googlescholar    : "https://scholar.google.com/citations?user=-1sXorAAAAAJ"
@@ -174,7 +173,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: compress
       author_profile: true
       read_time: true
       comments: true
@@ -185,14 +184,14 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: single
+      layout: compress
       author_profile: true
   # _teaching
   - scope:
       path: ""
       type: teaching
     values:
-      layout: single
+      layout: compress
       author_profile: true
       share: true
       comments: true
@@ -210,7 +209,7 @@ defaults:
       path: ""
       type: portfolio
     values:
-      layout: single
+      layout: compress
       author_profile: true
       share: true
       comment: true
@@ -271,37 +270,13 @@ whitelist:
   - jemoji
 
 
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
 
-
-# HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
