@@ -175,10 +175,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
   # _pages
   - scope:
       path: ""
@@ -191,7 +191,7 @@ defaults:
       path: ""
       type: teaching
     values:
-      layout: single
+      layout: compress
       author_profile: true
       share: true
       comments: true
@@ -202,8 +202,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
-      comments: true
+      share: false
+      comments: false
   # _portfolio
   - scope:
       path: ""
