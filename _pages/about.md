@@ -17,17 +17,27 @@ Welcome to the homepage of the Uncharted@IU Research Group in the Department of 
 
 <span style="color: red;">Research Assistantships For Students with Physics or Mathematics Backgrounds</span>
 ======
-<span style="color: red;">We are actively recruiting motivated students interested in quantum computing! We welcome students with strong foundations in physics, mathematics, or related fields, and an enthusiasm for learning interdisciplinary research skills. Ideal candidates are curious, self-driven, and excited about working on emerging technologies. We are interested in students who have experience with (or willingness to learn) quantum computing and machine learning. Please email me.</span>
+<span style="color: red;">We are actively recruiting self-motivated students interested in quantum computing and machine learning! We welcome students with strong foundations in physics, mathematics, or related fields, and an enthusiasm for learning interdisciplinary research skills. Ideal candidates are curious, self-driven, and excited about working on emerging technologies. Please email me your CV.</span>
 
 
 Research Focus
 ======
 ### Quantum Computing
 - Secure and trustworthy quantum computation  
-- Variational quantum algorithms (VQAs)  
+- Variational quantum algorithms 
 - Quantum hardware–software co-design  
 
 ### Sustainable Machine Learning
 - Energy- and resource-efficient ML systems  
 - Sustainable and green AI  
 - Responsible large-scale generative models  
+
+
+Crew Members (a.k.a. Alumni)
+======
+- Captain (kept the ship mostly afloat): Lei Jiang
+- First Mate (now running their own ship): Qian Lou — Assistant Professor, University of Central Florida
+- Bosun (kept the engines from exploding): Farzaneh Zokaee — CPU Architect, Ampere Computing
+- Chief Engineer (made the impossible compile): Mengxin Zheng — Assistant Professor, University of Central Florida
+- Medical Purser (band-aids, sanity checks, and coffee): Cheng Chu — PostDoc, North Carolina State University
+- Cook (morale officer, exact duties classified): Position permanently open
