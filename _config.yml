@@ -13,18 +13,14 @@ author:
   # Biographic information
   avatar           : "ship.png"
   name             : "Lei Jiang"
-  bio              : "Associate Professor"
+  bio              : "Associate Professor at Indiana University."
   location         : "Bloomington, Indiana, USA"
   employer         : "Indiana University"
-  uri              : # URL
 
   # Academic websites
-  academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
+  arxiv            : "http://arxiv.org/a/jiang_l_4"
   googlescholar    : "https://scholar.google.com/citations?user=-1sXorAAAAAJ"
   orcid            : "https://orcid.org/0000-0003-4795-0284"
-
-
   github           : "UnchartedRLab"
 
 
@@ -162,21 +158,6 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-# These settings control the types of collections used by the template
-collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
-  publications:
-    output: true
-    permalink: /:collection/:path/
-  activities:
-    output: true
-    permalink: /:collection/:path/
-
-
-
 # These settings control how pages and collections are included in the site
 defaults:
   # _posts
@@ -200,7 +181,7 @@ defaults:
   # _teaching
   - scope:
       path: ""
-      type: teaching
+      type: pages
     values:
       layout: single
       author_profile: true
@@ -209,21 +190,12 @@ defaults:
   # _publications
   - scope:
       path: ""
-      type: publications
+      type: pages
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: activities
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
 
 
 
