@@ -8,9 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to the homepage of the Uncharted@IU Research Group in the department of Intelligent Systems Engineering at the Indiana University (IU). The focus of our research group includes three topics: quantum computing, hardware accelerator design, and sustainable machine learning. Particularly, we are focusing on designing algorithms and hardware for quantum computing and machine learning. The Uncharted@IU is ruled industriously by the iron fist of Dr. Lei Jiang.
+Welcome to the homepage of the Uncharted@IU Research Group in the department of [Intelligent Systems Engineering](https://engineering.indiana.edu/index.html) at the Indiana University (IU). The focus of our research group includes two topics: quantum computing, and sustainable machine learning. Particularly, we are focusing on designing algorithms and hardware for quantum computing and machine learning. The Uncharted@IU is ruled industriously by the iron fist of Dr. Lei Jiang ([email](email.png)).
 
-<span style="color: red;">RAships for Physics and Math background students</span>
+
+<span style="color: red;">RAships for Physics and Math Background Students</span>
 ======
 We are recruiting students who are interested in quantum computing.
 

@@ -6,7 +6,7 @@ title_separator          : "-"
 name                     : &name "Lei Jiang"
 description              : &description "Homepage of Uncharted Lab"
 url                      : https://unchartedrlab.github.io/ 
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/publications" # the subpath of your site, e.g. "/blog"
 repository               : "unchartedrlab/unchartedrlab.github.io"
 
 author:
@@ -30,8 +30,6 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
