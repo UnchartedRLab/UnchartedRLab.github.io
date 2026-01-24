@@ -6,7 +6,7 @@ title_separator          : "-"
 name                     : &name "Lei Jiang"
 description              : &description "Homepage of Uncharted Lab"
 url                      : https://unchartedrlab.github.io/ 
-baseurl                  : "/publications" # the subpath of your site, e.g. "/blog"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "unchartedrlab/unchartedrlab.github.io"
 
 author:
