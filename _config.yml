@@ -6,32 +6,17 @@ title_separator          : "-"
 name                     : &name "Lei Jiang"
 description              : &description "Homepage of Uncharted Lab"
 url                      : https://unchartedrlab.github.io/ 
+baseurl                  : ""
 repository               : "unchartedrlab/unchartedrlab.github.io"
-
-author:
-  # Biographic information
-  avatar           : "ship.png"
-  name             : "Lei Jiang"
-  bio              : "Associate Professor at Indiana University"
-  location         : "Bloomington, Indiana, USA"
-  employer         : "Indiana University"
-
-  # Academic websites
-  arxiv            : "http://arxiv.org/a/jiang_l_4"
-  googlescholar    : "https://scholar.google.com/citations?user=-1sXorAAAAAJ"
-  orcid            : "https://orcid.org/0000-0003-4795-0284"
-  github           : "UnchartedRLab"
-
-
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
+teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+talkmap_link             : false #change to true to add link to talkmap on talks page
+
 comments:
-  provider               : false # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
     shortname            :
   discourse:
@@ -39,9 +24,9 @@ comments:
   facebook:
     appid                :
     num_posts            : # 5 (default)
-    colorscheme          : "light"
+    colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : ['name', 'url', 'message']
+  allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
@@ -57,16 +42,52 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+# Social Sharing
+twitter:
+  username               : 
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 :  # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
 
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
+
+
+
+author:
+  # Biographic information
+  avatar           : "ship.png"
+  name             : "Lei Jiang"
+  bio              : "Associate Professor at Indiana University"
+  location         : "Bloomington, Indiana, USA"
+  employer         : "Indiana University"
+
+  # Academic websites
+  arxiv            : "http://arxiv.org/a/jiang_l_4"
+  googlescholar    : "https://scholar.google.com/citations?user=-1sXorAAAAAJ"
+  orcid            : "https://orcid.org/0000-0003-4795-0284"
+  github           : "UnchartedRLab"
+
 
 
 # Reading Files
@@ -127,44 +148,94 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# These settings control how pages and collections are included in the site
+
+# Collections
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+  news:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
 defaults:
   # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: compress
+      layout: single
       author_profile: true
-      read_time: false
-      comments: false
-      share: false
-      related: false
+      read_time: true
+      comments: true
+      share: true
+      related: true
   # _pages
   - scope:
       path: ""
       type: pages
     values:
-      layout: compress
-      author_profile: false
+      layout: single
+      author_profile: true
   # _teaching
   - scope:
       path: ""
-      type: pages
+      type: teaching
     values:
-      layout: compress
-      author_profile: false
-      share: false
-      comments: false
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
   # _publications
   - scope:
       path: ""
-      type: pages
+      type: publications
     values:
       layout: compress
-      author_profile: false
+      author_profile: true
+      share: true
+      comments: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: single
+      author_profile: true
       share: false
-      comments: false
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: compress
+      author_profile: true
+      share: false
 
 
 
