@@ -22,15 +22,8 @@ Welcome to the homepage of the Uncharted@IU Research Group in the Department of 
 
 Research Focus
 ======
-### Quantum Computing
-- Secure and trustworthy quantum computation  
-- Variational quantum algorithms 
-- Quantum hardware–software co-design  
-
-### Sustainable Machine Learning
-- Energy- and resource-efficient ML systems  
-- Sustainable and green AI  
-- Responsible large-scale generative models  
+- Quantum Computing: Secure and trustworthy quantum computation; Variational quantum algorithms; Quantum hardware–software co-design  
+- Sustainable Machine Learning: Energy- and resource-efficient ML systems; Sustainable and green AI; Responsible large-scale generative models  
 
 
 Crew Members (a.k.a. Alumni)
