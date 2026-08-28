@@ -30,7 +30,7 @@ Crew Members (a.k.a. Alumni)
 ======
 - Captain (kept the ship mostly afloat): Lei Jiang
 - First Mate (now running their own ship): Qian Lou — Assistant Professor, University of Central Florida
-- Bosun (kept the engines from exploding): Farzaneh Zokaee — CPU Architect, Ampere Computing
+- Bosun (kept the engines from exploding): Farzaneh Zokaee — CPU Architect, Samsung Research
 - Chief Engineer (made the impossible compile): Mengxin Zheng — Assistant Professor, University of Central Florida
-- Medical Purser (band-aids, sanity checks, and coffee): Cheng Chu — PostDoc, North Carolina State University
+- Medical Purser (band-aids, sanity checks, and coffee): Cheng Chu — Assistant Professor, George Mason University, <span style="color: red;">Congratulations!</span>
 - Cook (morale officer, exact duties classified): Position permanently open
